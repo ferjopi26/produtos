@@ -13,7 +13,7 @@ class DataAccess():
 
     def getConnection(self):
         try:
-            conn = mariadb.connect(user="fernando", password="ferjopi26", host="localhost", port=3306, database="produtos")
+            conn = mariadb.connect(user="username", password="password", host="localhost", port=3306, database="produtos")
             return conn
         except mariadb.Error as e:
             print(f"Falha ao conectar ao MariaDB: {e}")
