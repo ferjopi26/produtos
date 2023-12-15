@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.16.0 -->
+<interface>
+  <!-- interface-name produtos.ui -->
+  <requires lib="gtk" version="4.8"/>
+  <object class="GtkWindow" id="win_produtos">
+    <property name="height-request">600</property>
+    <property name="title">Papelaria Papel Branco - Produtos</property>
+    <property name="titlebar">
+      <object class="GtkHeaderBar"/>
+    </property>
+    <property name="width-request">800</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="hexpand">True</property>
+            <property name="margin-bottom">5</property>
+            <property name="margin-end">5</property>
+            <property name="margin-start">5</property>
+            <property name="margin-top">5</property>
+            <property name="vexpand">True</property>
+            <child>
+              <object class="GtkColumnView" id="list_produtos"/>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <child>
+              <object class="GtkButton" id="btn_sair">
+                <property name="label">Sair</property>
+                <property name="margin-bottom">5</property>
+                <property name="margin-end">5</property>
+                <property name="margin-start">5</property>
+                <property name="margin-top">5</property>
+                <property name="width-request">140</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="btn_novo">
+                <property name="label">Novo Produto</property>
+                <property name="margin-bottom">5</property>
+                <property name="margin-end">5</property>
+                <property name="margin-start">5</property>
+                <property name="margin-top">5</property>
+                <property name="width-request">140</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="btn_venda">
+                <property name="label">Venda</property>
+                <property name="margin-bottom">5</property>
+                <property name="margin-end">5</property>
+                <property name="margin-start">5</property>
+                <property name="margin-top">5</property>
+                <property name="width-request">140</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="btn_consulta_vendas">
+                <property name="label">Consultar Vendas</property>
+                <property name="margin-bottom">5</property>
+                <property name="margin-end">5</property>
+                <property name="margin-start">5</property>
+                <property name="margin-top">5</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
